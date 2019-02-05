@@ -101,7 +101,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "../modules/_core": [
+  "../../modules/_core": [
     {
       "id": 20,
       "name": "./node_modules/@babel/runtime-corejs2/node_modules/core-js/library/modules/_core.js",
@@ -221,7 +221,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "./../../../../node-libs-browser/node_modules/process/browser.js": [
+  "./../../node-libs-browser/node_modules/process/browser.js": [
     {
       "id": 46,
       "name": "./node_modules/node-libs-browser/node_modules/process/browser.js",
@@ -621,7 +621,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "react-transition-group/TransitionGroup": [
+  "./TransitionGroup": [
     {
       "id": 272,
       "name": "./node_modules/react-transition-group/TransitionGroup.js",
@@ -629,7 +629,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "react-transition-group/Transition": [
+  "./Transition": [
     {
       "id": 276,
       "name": "./node_modules/react-transition-group/Transition.js",
@@ -1013,7 +1013,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "@babel/runtime-corejs2/core-js/array/is-array": [
+  "../core-js/array/is-array": [
     {
       "id": 362,
       "name": "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js",
@@ -1579,7 +1579,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "./incr32": [
+  "../incr32": [
     {
       "id": 537,
       "name": "./node_modules/browserify-aes/incr32.js",
