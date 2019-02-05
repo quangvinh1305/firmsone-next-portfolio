@@ -108,8 +108,8 @@ class Index extends React.Component {
               </Col>
             </Row>
           </Container>
-          <span className="service-link">Vector illustration credit:{' '}
-            <a href="https://www.Vecteezy.com/">vecteezy.com</a>
+          <span className="service-link">Firmsone Travelling Credit:{' '}
+            <a href="http://www.firmsone.com/">firmsone.com</a>
           </span>
         </div>
       </BaseLayout>

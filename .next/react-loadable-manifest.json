@@ -221,7 +221,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "./../../node-libs-browser/node_modules/process/browser.js": [
+  "./../../../../node-libs-browser/node_modules/process/browser.js": [
     {
       "id": 46,
       "name": "./node_modules/node-libs-browser/node_modules/process/browser.js",
@@ -309,7 +309,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "@babel/runtime-corejs2/helpers/defineProperty": [
+  "./defineProperty": [
     {
       "id": 194,
       "name": "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js",
@@ -773,7 +773,7 @@
       "publicPath": "static/chunks/commons.76b3df34f5802a932c09.js"
     }
   ],
-  "@babel/runtime-corejs2/helpers/assertThisInitialized": [
+  "./assertThisInitialized": [
     {
       "id": 331,
       "name": "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js",
