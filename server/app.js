@@ -4,6 +4,7 @@ const path = require('path');
 const next = require('next');
 const mongoose = require('mongoose');
 const routes = require('../routes');
+const url = require("url");
 
 // SERVICE
 const authService = require('./services/auth');
@@ -67,7 +68,20 @@ app.prepare()
   })
 
   server.get('*', (req, res) => {
-    return handle(req, res)
+          /* Parse request url to get its pathname */
+      const parsedUrl = url.parse(req.url, true);
+      const { pathname } = parsedUrl;
+
+      /* If a service worker requested, serve it as a static file */
+      if (pathname === "/service-worker.js") {
+        const filePath = path.join(__dirname, "../.next", pathname);
+        console.log(filePath);
+        app.serveStatic(req, res, filePath);
+
+        /* Otherwise, let Next take care of it */
+      } else {
+        return handle(req, res)
+      }
   })
 
   server.use(function (err, req, res, next) {

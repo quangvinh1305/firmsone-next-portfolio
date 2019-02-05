@@ -3,6 +3,7 @@ const withCSS = require('@zeit/next-css');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const withSourceMaps = require('@zeit/next-source-maps');
+const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 
 module.exports = withCSS(
   withSass({
@@ -11,6 +12,18 @@ module.exports = withCSS(
         if (Array.isArray(config.optimization.minimizer)) {
           config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}));
         }
+        config.plugins.push(
+      new SWPrecacheWebpackPlugin({
+        minify: true,
+        staticFileGlobsIgnorePatterns: [/\.next\//],
+        runtimeCaching: [
+          {
+            handler: "networkFirst",
+            urlPattern: /^https?.*/
+          }
+        ]
+      }))
+        
       }
       return config;
     }
