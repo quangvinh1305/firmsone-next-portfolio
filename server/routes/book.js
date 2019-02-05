@@ -12,4 +12,3 @@ router.patch('/:id', bookCtrl.updateBook);
 router.delete('/:id', bookCtrl.deleteBook);
 
 module.exports = router;
-

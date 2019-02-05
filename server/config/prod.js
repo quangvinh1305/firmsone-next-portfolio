@@ -1,5 +1,4 @@
 module.exports = {
-  DB_URI: process.env.DB_URI,
-  NAMESPACE: 'https://filipjerga.herokuapp.com'
-}
-
+  DB_URI: 'mongodb://localhost:27017/portfolio',
+  NAMESPACE: 'https://firmsone.blog'
+};
